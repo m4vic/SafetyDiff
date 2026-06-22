@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safetydiff"
+version = "0.1.0"
+description = "Safety regression comparison for AI systems."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Neuralchemy" }
+]
+license = { text = "MIT" }
+keywords = [
+  "ai-safety",
+  "llm-security",
+  "regression-testing",
+  "prompt-injection",
+  "model-evaluation"
+]
+
+[project.scripts]
+safetydiff = "safetydiff.cli:main"
