@@ -1,5 +1,8 @@
 # SafetyDiff 🛡️ 
 
+[![PyPI version](https://badge.fury.io/py/safetydiff.svg)](https://pypi.org/project/safetydiff/)
+[![Downloads](https://pepy.tech/badge/safetydiff)](https://pepy.tech/project/safetydiff)
+
 **The Git-Diff for LLM Safety Posture**
 
 SafetyDiff is an open-source continuous integration (CI/CD) and analytics engine for Large Language Models. It solves the "Black Box Versioning" problem: When you upgrade a model from version 1 to version 2 (or switch from Qwen to OpenAI), is the model *actually* safer, or does it just have different vulnerabilities?
@@ -13,10 +16,9 @@ Current AI security benchmarks output static numbers (e.g., "Model A scored 82%"
 *   **Granular Taxonomy:** Breaks down safety by Intent (e.g., `role_hijack`, `data_exfiltration`, `tool_abuse`).
 
 ## Installation
+The easiest way to install SafetyDiff is via pip:
 ```bash
-git clone https://github.com/m4vic/SafetyDiff.git
-cd SafetyDiff
-pip install -r requirements.txt
+pip install safetydiff
 ```
 
 ## Quick Start (Demo)
