@@ -8,7 +8,6 @@
 SafetyDiff is an open-source continuous integration (CI/CD) and analytics engine for Large Language Models. It solves the "Black Box Versioning" problem: When you upgrade a model from version 1 to version 2 (or switch from Qwen to OpenAI), is the model *actually* safer, or does it just have different vulnerabilities?
 
 Instead of relying on single benchmark scores, SafetyDiff reads evaluation databases and provides a direct, side-by-side mathematical diff of how two models respond to the exact same adversarial attacks.
-
 ## Why SafetyDiff?
 Current AI security benchmarks output static numbers (e.g., "Model A scored 82%"). SafetyDiff treats LLM safety like software engineering:
 *   **Regression Tracking:** See exactly which vulnerabilities were fixed, and which new vulnerabilities were introduced.
